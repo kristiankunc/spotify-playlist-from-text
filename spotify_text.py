@@ -62,7 +62,7 @@ class SpotifyText:
             if item[1] is True:
                 return [[start_num, item[0]]]
             elif item[1] is not False:
-                return [[start_num, item[0]], (*item[1])]
+                return [[start_num, item[0]]] + item[1]
         else:
             return False
 
